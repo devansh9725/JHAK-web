@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHAK Hypercar</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="script" href="js/scripts.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <style>
+        /* Center the car.jpg image and add a gray box as a border */
+        .feature {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically (if needed) */
+            background-color: #f0f0f0; /* Gray background to act as a border */
+            padding: 20px; /* Space around the image */
+            margin: 20px auto; /* Center the entire section */
+            max-width: 750px; /* Restrict the section width */
+            border-radius: 10px; /* Optional: Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow for better aesthetics */
+        }
+
+        .feature img {
+            width: 700px;
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .footer-email {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="JHAK Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li> <!-- Link to About Us section -->
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li> <!-- Moved Contact to the last -->
+            </ul>
+            <div class="cta">
+                <a href="#book" class="nav-btn">Book a Test Drive</a>
+            </div>
+        </nav>
+    </header>
+      
+    <!-- 3D Model Section -->
+    <section id="hero">
+        <canvas id="carCanvas"></canvas>
+        <div class="cta">
+            <a href="#electric-hypercar" class="discover-btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="scroll-section"> <!-- New About Us section -->
+        <h1>About Us</h1>
+        <p>"We are the Ajudiya brothers, driven by a vision to create groundbreaking electric hypercars from recycled and repurposed scrap vehicles. With innovation at our core, we aim to transform the future of automotive engineering through sustainability and cutting-edge design."</p>
+    </section>
+
+    <!-- Scroll Section: Electric Hypercar -->
+    <section id="electric-hypercar" class="scroll-section">
+        <h1>Electric Hypercar</h1>
+        <p>Powered by the future of technology, built for performance.</p>
+    </section>
+
+    <!-- Scroll Section: Soon on the Road -->
+    <section id="soon-on-road" class="scroll-section">
+        <h1>Soon on the Road</h1>
+        <p>Revolutionizing speed and elegance. Available in 2026.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="scroll-section">
+        <div class="feature">
+            <img src="images/car.jpg" alt="Hypercar">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Stay updated with JHAK</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-email">Email: <a href="mailto:contact@jhakhypercars.com">contact@jhakhypercars.com</a></p>
+        <p>&copy; 2024 JHAK Hypercars. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include JS files -->
+    <script src="lib/three.min.js"></script>
+    <script src="lib/GLTFLoader.js"></script>
+    <script src="lib/gsap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+</body>
+</html>

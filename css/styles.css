@@ -1,0 +1,255 @@
+/* General Styling */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    position: relative;
+}
+
+#carCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
+}
+
+#hero .cta {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hero .cta .discover-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+#hero .cta .discover-btn:hover {
+    background-color: white;
+    color: #ff6600;
+}
+
+/* Scroll Sections */
+.scroll-section {
+    background-color: #222;
+    padding: 100px 0;
+    color: white;
+}
+
+.scroll-section h1 {
+    font-size: 3rem;
+}
+
+.scroll-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+#features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* .feature {
+    background-color: red;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+} */
+ .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 60px;
+    margin-bottom: 0px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;  /* Removes bullets */
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #ff6600;
+    border-radius: 30px;
+    color: #000;
+}
+
+/* CTA Button in Nav */
+.cta .nav-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cta .nav-btn:hover {
+    background-color: #fff;
+    color: #ff6600;
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #111;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin: 20px 0;
+}
+
+.footer .social-icons a {
+    color: #ff6600;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #fff;
+}
